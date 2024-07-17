@@ -70,7 +70,7 @@ namespace XIVLauncher.Common.Dalamud
             if (!this.updater.Runner.Exists)
                 throw new DalamudRunnerException("Runner did not exist.");
 
-            if (!ReCheckVersion(gamePath))
+            if (false && !ReCheckVersion(gamePath))
             {
                 this.updater.SetOverlayProgress(IDalamudLoadingOverlay.DalamudUpdateStep.Unavailable);
                 this.updater.ShowOverlay();
